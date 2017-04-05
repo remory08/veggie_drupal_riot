@@ -1,0 +1,21 @@
+<?php
+
+/**
+* Implements hook_services_resources
+*/
+function recipe_service_services_resources(){
+    return array(
+        'recipes' => array(
+            'index' => array(
+                'help' => 'Recipes Help',
+                'file' => array('type' => 'inc', 'module' => 'recipes_service', 'name' => 'recipe_services.resources'),
+                'callback' => '_recipe_service_recipe_index',
+                'access callback' => '_recipe_services_access'
+            )
+        )
+    );
+}
+
+function _recipe_services_access(){
+    return TRUE;
+}

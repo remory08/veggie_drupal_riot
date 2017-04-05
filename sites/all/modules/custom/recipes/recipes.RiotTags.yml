@@ -1,0 +1,5 @@
+Recipe:
+  label: Recipe
+  compiledTagPath: tags/recipes/build/recipe.js
+  htmlTagName: 'recipe'
+  class: Drupal\recipes\Plugin\RiotTag\RecipeBase

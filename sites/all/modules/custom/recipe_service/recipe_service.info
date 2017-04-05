@@ -1,0 +1,5 @@
+name = recipes_service
+description = A module to encapsulate our recipe service logic
+core = 7.x
+
+
